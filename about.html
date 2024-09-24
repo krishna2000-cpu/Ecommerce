@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bike E-commerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .about-section,
+        .mission-section,
+        .team-section,
+        .testimonials-section {
+            padding: 50px 0;
+        }
+
+        .team-card,
+        .testimonial-card {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .team-card:hover,
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .testimonial-card {
+            flex: 1 1 30%;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bike Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-section text-center">
+        <div class="container">
+            <h1>About Our Company</h1>
+            <p class="lead">
+                Welcome to BikeShop, your one-stop shop for all your biking needs. We have been serving cycling enthusiasts
+                since 2010, offering the best selection of bikes, accessories, and services. Our mission is to bring
+                quality, affordability, and exceptional customer service to riders of all levels.
+            </p>
+        </div>
+    </section>
+
+    <section class="mission-section bg-light text-center">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>
+                We believe that cycling should be accessible to everyone. Whether you're commuting to work, racing in
+                competitions, or simply enjoying the ride, our goal is to provide you with the right tools to make your
+                journey unforgettable. We strive to offer the latest in biking technology, paired with personalized
+                service from passionate experts.
+            </p>
+        </div>
+    </section>
+
+    <section class="team-section text-center">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-3">
+                    <div class="team-card">
+                        <img src="ceo.jpg" alt="CEO">
+                        <h3>Jotheesh</h3>
+                        <p>Founder & CEO</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-3">
+                    <div class="team-card">
+                        <img src="designer.jpg" alt="Designer">
+                        <h3>Gokul</h3>
+                        <p>Head Designer</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-3">
+                    <div class="team-card">
+                        <img src="sales.jpg" alt="Sales Manager">
+                        <h3>Binu joshwa</h3>
+                        <p>Sales Manager</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-md-3">
+                    <div class="team-card">
+                        <img src="mechanic.jpg" alt="Lead Mechanic">
+                        <h3>Ajay kumar</h3>
+                        <p>Lead Mechanic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section bg-light text-center">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p>"The best bike shop around! I love my new mountain bike, and the customer service was top-notch."</p>
+                    <h3>Michael Thompson</h3>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p>"Highly recommend! They helped me find the perfect road bike for my weekend rides."</p>
+                    <h3>Sarah Wilson</h3>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p>"Excellent service and great prices. I will definitely be coming back for all my biking needs."</p>
+                    <h3>David Lee</h3>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <p>"The staff here really know their stuff. They helped me customize my bike to my exact specifications."</p>
+                    <h3>Jessica Taylor</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 Bike Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

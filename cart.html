@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Bike E-commerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bike Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Your Shopping Cart</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mountain Bike</td>
+                    <td>$500.00</td>
+                    <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+                    <td>$500.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Road Bike</td>
+                    <td>$700.00</td>
+                    <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+                    <td>$700.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Hayabusa bike</td>
+                    <td>$50.00</td>
+                    <td><input type="number" value="1" min="1" style="width: 50px;"></td>
+                    <td>$50.00</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Total: $1,250.00</h3>
+        <a href="checkout.html" class="btn btn-success">Proceed to Checkout</a>
+    </div>
+
+</body>
+</html>
